@@ -17,5 +17,8 @@ describe('UI Elements',function(){
 
         // sign in button
         cy.get("[name=submit]").should('be.visible').should('be.enabled').click()
+
+        // verify page title
+        cy.title().should('eq','Login: Mercury Tours')
     })
 })
