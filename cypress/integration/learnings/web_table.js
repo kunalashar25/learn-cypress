@@ -19,8 +19,6 @@ describe('UI Elements',function(){
                     expect(bookName).to.equal('Master In Java')
                 })
             }
-
         })
-
     })
 })
