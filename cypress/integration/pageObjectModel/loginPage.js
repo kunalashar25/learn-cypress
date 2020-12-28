@@ -17,7 +17,7 @@ class LoginPage {
         const field = cy.get('input[name=Password]')
         field.clear().type(value)
         return this
-    }
+}
 
     // to click on login
     submit(){

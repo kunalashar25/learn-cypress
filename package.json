@@ -9,6 +9,8 @@
   "author": "kunal.ashar",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^6.1.0"
+    "cypress": "^6.1.0",
+    "cypress-wait-until": "^1.7.1",
+    "cypress-xpath": "^1.6.1"
   }
 }
