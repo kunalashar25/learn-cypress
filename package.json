@@ -4,13 +4,24 @@
   "description": "test project on cypress",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:run": "cypress run",
+    "cy:parallel": "cypress-parallel -s cy:run -t 2 -d cypress/integration/learnings"
   },
   "author": "kunal.ashar",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^6.1.0",
+    "cypress-cucumber-preprocessor": "^4.0.0",
     "cypress-wait-until": "^1.7.1",
     "cypress-xpath": "^1.6.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "commonPath": "cypress/integration/sample_project/step_definition",
+    "stepDefinitions": "cypress/integration/sample_project/step_definition"
+  },
+  "dependencies": {
+    "cypress-parallel": "^0.1.9"
   }
 }

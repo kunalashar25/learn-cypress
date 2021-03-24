@@ -1,6 +1,5 @@
 class LoginPage {
 
-
     // method to visit the page
     visit() {
         cy.visit('https://admin-demo.nopcommerce.com/login')

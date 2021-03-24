@@ -17,7 +17,8 @@ describe('UI Navigation',function(){
         cy.title().should('eq','nopCommerce demo store')
 
         // click on register link
-        cy.get('.ico-register').contains('Reg').click()
+        //cy.get('.ico-register').contains('Reg').click()
+        cy.xpath('//a[text()="Register"]').contains('Reg').click()
 
         // validate register page title
         cy.title().should('eq','nopCommerce demo store. Register')
